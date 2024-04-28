@@ -42,3 +42,31 @@ console.log(typeof myFunction);//function
 //Reference (Non primitive)
 
 //Array, Objects, Functions
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+let myYouTubename="hiteshchoudharydotcom"
+
+let anothername= myYouTubename
+anothername = "chaiaurcode"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+let userOne ={
+    email:"user@google.com",
+    upi:"user@ybl"
+}
+
+let userTwo = userOne;
+
+userTwo.email = "hitesh@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+// Stack stores the variable value 
+// heap stores the reference to the value
