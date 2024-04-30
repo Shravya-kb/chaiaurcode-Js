@@ -70,7 +70,14 @@ console.log(newDate.getDay());
 
 
 
-newDate.toLocaleString('dwfault',{
+console.log(newDate.toLocaleString('default',{
     weekday:"long",
-    timeZone:"Ind"
-})
+    timeZone:"Asia/Kolkata"
+    
+}));
+
+let currentDate = new Date();
+console.log(currentDate.toLocaleString('default', {
+    weekday: "long",
+    timeZone: "Asia/Kolkata"
+}));
