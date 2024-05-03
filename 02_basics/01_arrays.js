@@ -38,6 +38,29 @@ myArr.unshift(9);
 myArr.shift();
 
 console.log(myArr.includes(9));
+console.log(myArr.indexOf(3));
 console.log(myArr);
+
+
+const newArr = myArr.join();
+
+console.log(myArr);// OUTPUT: [ 0, 1, 2, 3, 4, 5, 6]
+console.log(newArr);// OUTPUT: 0,1,2,3,4,5,6
+console.log(typeof newArr);//OUTPUT: string
+
+const myn1=myArr.slice(1,3);//string
+
+console.log(myn1);// [ 1, 2 ]//both the ranges are not included.ONly 1st range is included & 2nd range is 
+//included.
+console.log("B ",myArr);//B  [0, 1, 2, 3, 4, 5, 6] //NOTE:spice() method doesnot manipulate the original array.
+
+const myn2 = myArr.splice(1,3);
+console.log(myn2);//[ 1, 2, 3 ] //both the ranges are included
+console.log("C ", myArr);// C [ 0, 4, 5, 6 ] //NOTE:splice() method manipulate the original array.
+//and both the ranges are included.
+
+
+
+
 
 
