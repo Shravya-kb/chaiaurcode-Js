@@ -25,3 +25,33 @@ const obj4 = {5: "a", 6: "b"}
 
 const obj3 = {...obj1, ...obj2}
 // console.log(obj3);
+
+const users =[
+    {
+        id: 1,
+        email: "h@gmail.com",
+
+    },
+    {
+        id: 1,
+        email: "h@gmail.com",
+        
+    },
+    {
+        id: 1,
+        email: "h@gmail.com000000000000000",
+        
+    },
+    {
+        id: 1,
+        email: "h@gmail1111111111111111111.com",
+        
+    },
+    {
+        id: 1,
+        email: "h@gmail222222222222222222.com",
+        
+    },
+]
+
+console.log(users[4].email);
