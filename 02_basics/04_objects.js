@@ -8,13 +8,13 @@ const tinderUser = {
 const regularUser={
     email:"some@gmail.com",
     fullname:{
-        userfullname:{
+        userFullname:{
             firstname:"hitesh",
             lastname:"choudhary"
         }
     }
 }
-console.log(regularUser.fullname.userFullname.first +" "+ regularUser.fullname.userFullname.last);
+console.log(regularUser.fullname.userFullname.firstname +" "+ regularUser.fullname.userFullname.lastname);
 console.log(tinderUser);
 const obj1 = {1: "a", 2: "b"}
 const obj2 = {3: "a", 4: "b"}
