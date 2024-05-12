@@ -81,8 +81,18 @@ courseInstructor = "something";//OUTPUT:something
 console.log(courseInstructor);
 console.log(course.courseInstructor);//OUTPUT:hitesh
 const{courseInstructor:Instructor}=course;//Here we are giving Instructor as a new name to courseInstructor.
+//Destructuring is done above
 console.log(Instructor);//OUTPUT: hitesh
 
 const{coursename}=course;//here course is the object from which coursename key is called
 console.log(coursename);//OUTPUT:JS in hindi
+
+//API RESPONSE CAN BE IN TWO TYPES. 1. JSON ARRAYS 2. JSON OBJECTS
+
+// {
+//     "name":"hitesh",
+//     "coursename":"js in hindi",
+//     "price":"free"
+// }
+
 
