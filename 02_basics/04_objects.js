@@ -55,3 +55,34 @@ const users =[
 ]
 
 console.log(users[4].email);
+
+console.log(tinderUser);//Output:{ id: '123abc', name: 'Sammy', isLoggedIn: 'false' }
+
+console.log(Object.keys(tinderUser));// OUTPUT:[ 'id', 'name', 'isLoggedIn' ]
+console.log(Object.values(tinderUser));//OUTPUT:[ '123abc', 'Sammy', 'false' ]
+console.log(Object.entries(tinderUser));//OUTPUT:[ [ 'id', '123abc' ], [ 'name', 'Sammy' ], [ 'isLoggedIn', 'false' ] ]
+
+
+console.log(tinderUser.hasOwnProperty('isLoggedIn'));//OUTPUT:true
+console.log(tinderUser.hasOwnProperty('isLogged'));//OUTPUT:false
+
+//Advanced OBJECTS CONCEPTS
+
+const course= {
+    coursename: "JS in hindi",
+    price: "999",
+    courseInstructor: "hitesh",
+}
+
+// course.courseInstructor
+
+let {courseInstructor} = course;
+courseInstructor = "something";//OUTPUT:something
+console.log(courseInstructor);
+console.log(course.courseInstructor);//OUTPUT:hitesh
+const{courseInstructor:Instructor}=course;//Here we are giving Instructor as a new name to courseInstructor.
+console.log(Instructor);//OUTPUT: hitesh
+
+const{coursename}=course;//here course is the object from which coursename key is called
+console.log(coursename);//OUTPUT:JS in hindi
+
